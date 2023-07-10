@@ -2,7 +2,7 @@
   "name": "farmyard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "https://tranquil-starlight-1772c5.netlify.app/",
   "scripts": {
     "dev": "next dev",
     "build": "next build && node copy-headers.js",
