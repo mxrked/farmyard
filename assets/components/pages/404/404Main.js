@@ -3,6 +3,7 @@
  *  This is the 404 main
  *
  */
+import { useEffect } from "react";
 
 import { BackgroundImage } from "react-image-and-background-image-fade";
 
@@ -11,6 +12,11 @@ import { NOTFOUND_MAIN } from "@/assets/cdns/CDNBgs";
 import styles from "../../../styles/modules/404/404.module.css";
 
 export const Main_404 = () => {
+  useEffect(() => {
+    document.getElementById("notFoundBG").ariaLabel =
+      "Vector Art of Sunny Meadow with Red Barn.";
+  }, []);
+
   return (
     <section className={`${styles.not_found_main}`}>
       <div className={`${styles.not_found_main_inner}`}>
@@ -20,6 +26,7 @@ export const Main_404 = () => {
             width="100%"
             height="100%"
             className={`${styles.bg}`}
+            id="notFoundBG"
           />
         </div>
 
