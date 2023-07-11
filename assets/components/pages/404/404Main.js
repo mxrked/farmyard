@@ -20,7 +20,9 @@ export const Main_404 = () => {
   return (
     <section className={`${styles.not_found_main}`}>
       <div className={`${styles.not_found_main_inner}`}>
-        <div className={`${styles.bg_holder}`}>
+        <div
+          className={`${styles.bg_holder} orientation-change-element half-second`}
+        >
           <BackgroundImage
             src={NOTFOUND_MAIN}
             width="100%"
@@ -31,14 +33,14 @@ export const Main_404 = () => {
         </div>
 
         <div className={`${styles.not_found_main_inner_text}`}>
-          <h1>404.</h1>
+          <h1 className="orientation-change-element half-second">404.</h1>
 
-          <p>
+          <p className="orientation-change-element half-second">
             The page you are looking for does not exist. You can go back to the
             home page using the link below. Sorry for the inconvenience.
           </p>
 
-          <a href="/" className="half-second">
+          <a href="/" className="orientation-change-element half-second">
             <span>Go Home</span>
           </a>
         </div>
