@@ -17,6 +17,7 @@ import DeclareStorageVariable from "@/assets/functions/data/storage/DeclareStora
 import RemoveStorageVariable from "@/assets/functions/data/storage/RemoveStorageVariable";
 import CheckUserDevice from "@/assets/functions/dom/checkers/CheckUserDevice";
 import CheckMobileNavMenuStatus from "@/assets/functions/dom/checkers/CheckMobileNavMenuStatus";
+import CheckScreenOrientation from "@/assets/functions/dom/checkers/CheckScreenOrientation";
 
 // Component Imports
 
@@ -119,6 +120,13 @@ export default function App({ Component, pageProps }) {
   }, [router]);
 
   //? CHECKERS
+  //! Check Page Orientation
+  useEffect(() => {
+    window.addEventListener("orientationchange", () => {
+      CheckScreenOrientation();
+    });
+  }, []);
+
   //! Check User Device
   useEffect(() => {
     let mobile,
