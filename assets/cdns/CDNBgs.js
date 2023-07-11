@@ -17,6 +17,8 @@ const INDEX_PETTING_2 = CDNBGReturn("index", "petting-2", "webp");
 const INDEX_PRODUCE_2 = CDNBGReturn("index", "produce-2", "webp");
 const INDEX_PRODUCE_5 = CDNBGReturn("index", "produce-5", "webp");
 
+const NOTFOUND_MAIN = CDNBGReturn("404", "404-main-bg", "webp");
+
 export {
   INDEX_COWS,
   INDEX_FARMER,
@@ -29,3 +31,5 @@ export {
   INDEX_PRODUCE_2,
   INDEX_PRODUCE_5,
 };
+
+export { NOTFOUND_MAIN };
