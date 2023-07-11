@@ -15,7 +15,12 @@ export const Main_404 = () => {
     <section className={`${styles.not_found_main}`}>
       <div className={`${styles.not_found_main_inner}`}>
         <div className={`${styles.bg_holder}`}>
-          <BackgroundImage src={NOTFOUND_MAIN} className={`${styles.bg}`} />
+          <BackgroundImage
+            src={NOTFOUND_MAIN}
+            width="100%"
+            height="100%"
+            className={`${styles.bg}`}
+          />
         </div>
 
         <div className={`${styles.not_found_main_inner_text}`}>
