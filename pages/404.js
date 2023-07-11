@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 
 // Component Imports
 import { PageHead } from "@/assets/components/global/Misc/PageHead";
+import { Logo_404 } from "@/assets/components/pages/404/404Logo";
 import { Main_404 } from "@/assets/components/pages/404/404Main";
 
 // Style Imports
@@ -19,6 +20,8 @@ export default function NotFound() {
   return (
     <div id="PAGE" className="overrides_404 page full-second">
       <PageHead />
+
+      <Logo_404 />
 
       <main id="PAGE_CNT">
         <Main_404 />
