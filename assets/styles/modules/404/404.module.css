@@ -9,4 +9,440 @@
 @font-face {
   font-family: "FG Regular";
   src: url("../../../fonts/FG_Regular.otf");
+}
+.not_found_logo {
+  position: absolute;
+  width: 100%;
+  height: 170px;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not_found_logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.not_found_logo a img {
+  max-width: 100px;
+  height: 100px;
+}
+.not_found_logo a div {
+  display: block;
+  margin-left: 30px;
+}
+.not_found_logo a div .top_text {
+  display: flex;
+  font-family: "FG Bold";
+  font-size: 40px;
+  color: #222831;
+}
+.not_found_logo a div .top_text span {
+  color: #17b978;
+}
+.not_found_logo a div .top_text .icon {
+  font-size: 12px;
+  margin-top: 12px;
+  margin-left: 5px;
+}
+.not_found_logo a div .bottom_text {
+  font-family: "FG Regular";
+  font-size: 20px;
+  color: #222831;
+  opacity: 0.6;
+}
+
+.not_found_main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not_found_main .not_found_main_inner {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+.not_found_main .not_found_main_inner .bg_holder {
+  max-width: 480px;
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+.not_found_main .not_found_main_inner .bg_holder .bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  scale: 1.2;
+}
+.not_found_main .not_found_main_inner .not_found_main_inner_text {
+  margin-top: 40px;
+}
+.not_found_main .not_found_main_inner .not_found_main_inner_text h1 {
+  font-family: "FG Bold";
+  font-size: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+}
+.not_found_main .not_found_main_inner .not_found_main_inner_text p {
+  white-space: pre-wrap;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: "FG Regular";
+  font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  line-height: 34px;
+}
+.not_found_main .not_found_main_inner .not_found_main_inner_text a {
+  background-color: #086972;
+  color: #fbfbfb;
+  font-family: "FG Semibold";
+  text-decoration: none;
+  width: 100px;
+  height: 40px;
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.not_found_main .not_found_main_inner .not_found_main_inner_text a:hover {
+  background-color: #17b978;
+}
+
+@media all and (max-width: 991px) {
+  .not_found_logo a img {
+    max-width: 70px;
+    height: 70px;
+  }
+  .not_found_logo a div {
+    margin-left: 15px;
+  }
+  .not_found_logo a div .top_text {
+    font-size: 35px;
+  }
+  .not_found_logo a div .bottom_text {
+    font-size: 18px;
+  }
+  .not_found_main .not_found_main_inner .bg_holder {
+    max-width: 400px;
+    height: 200px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text p {
+    max-width: 450px;
+  }
+}
+@media all and (max-width: 768px) {
+  .not_found_logo a img {
+    max-width: 60px;
+    height: 60px;
+  }
+  .not_found_logo a div {
+    margin-left: 15px;
+  }
+  .not_found_logo a div .top_text {
+    font-size: 30px;
+  }
+  .not_found_logo a div .top_text .icon {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .not_found_logo a div .bottom_text {
+    font-size: 16px;
+  }
+  .not_found_main .not_found_main_inner .bg_holder {
+    max-width: 370px;
+    height: 160px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text p {
+    max-width: 350px;
+  }
+}
+@media all and (max-width: 419px) {
+  .not_found_logo {
+    height: 100px;
+    position: relative;
+  }
+  .not_found_logo a img {
+    max-width: 60px;
+    height: 60px;
+  }
+  .not_found_logo a div {
+    margin-left: 15px;
+  }
+  .not_found_logo a div .top_text {
+    font-size: 30px;
+  }
+  .not_found_logo a div .top_text .icon {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .not_found_logo a div .bottom_text {
+    display: block;
+    font-size: 15px;
+    margin-top: -3px;
+  }
+  .not_found_main {
+    height: 90vh;
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+  .not_found_main .not_found_main_inner .bg_holder {
+    max-width: 280px;
+    height: 140px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text p {
+    max-width: 350px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .not_found_logo {
+    height: 100px;
+    position: relative;
+  }
+  .not_found_logo a img {
+    max-width: 60px;
+    height: 60px;
+  }
+  .not_found_logo a div {
+    margin-left: 15px;
+  }
+  .not_found_logo a div .top_text {
+    font-size: 30px;
+  }
+  .not_found_logo a div .top_text .icon {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .not_found_logo a div .bottom_text {
+    display: block;
+    font-size: 15px;
+    margin-top: -3px;
+  }
+  .not_found_main {
+    height: 150vh;
+  }
+  .not_found_main .not_found_main_inner .bg_holder {
+    max-width: 210px;
+    height: 110px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text {
+    margin-top: 20px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text p {
+    max-width: 360px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .not_found_logo {
+    position: relative;
+    height: 200px;
+  }
+  .not_found_logo a img {
+    max-width: 70px;
+    height: 70px;
+  }
+  .not_found_logo a div {
+    margin-left: 15px;
+  }
+  .not_found_logo a div .top_text {
+    font-size: 40px;
+  }
+  .not_found_logo a div .top_text .icon {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .not_found_logo a div .bottom_text {
+    display: block;
+    font-size: 20px;
+    margin-top: -3px;
+  }
+  .not_found_main {
+    height: 70vh;
+  }
+  .not_found_main .not_found_main_inner .bg_holder {
+    max-width: 300px;
+    height: 210px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text {
+    margin-top: 50px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text p {
+    max-width: 460px;
+    font-size: 23px;
+    line-height: 35px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .not_found_logo a img {
+    max-width: 50px;
+    height: 50px;
+  }
+  .not_found_logo a div {
+    margin-left: 15px;
+  }
+  .not_found_logo a div .top_text {
+    font-size: 30px;
+  }
+  .not_found_logo a div .top_text .icon {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .not_found_logo a div .bottom_text {
+    display: block;
+    font-size: 15px;
+    margin-top: -3px;
+  }
+  .not_found_main {
+    height: 115vh;
+  }
+  .not_found_main .not_found_main_inner .bg_holder {
+    max-width: 210px;
+    height: 110px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text {
+    margin-top: 20px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text p {
+    max-width: 460px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .not_found_logo {
+    position: relative;
+    height: 170px;
+  }
+  .not_found_logo a img {
+    max-width: 80px;
+    height: 80px;
+  }
+  .not_found_logo a div {
+    margin-left: 15px;
+  }
+  .not_found_logo a div .top_text {
+    font-size: 40px;
+  }
+  .not_found_logo a div .top_text .icon {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .not_found_logo a div .bottom_text {
+    display: block;
+    font-size: 20px;
+    margin-top: -3px;
+  }
+  .not_found_main {
+    height: 71vh;
+  }
+  .not_found_main .not_found_main_inner .bg_holder {
+    max-width: 300px;
+    height: 210px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text {
+    margin-top: 50px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text p {
+    max-width: 660px;
+    font-size: 23px;
+    line-height: 35px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .not_found_logo {
+    position: relative;
+    height: 100px;
+  }
+  .not_found_logo a img {
+    max-width: 50px;
+    height: 50px;
+  }
+  .not_found_logo a div {
+    margin-left: 15px;
+  }
+  .not_found_logo a div .top_text {
+    font-size: 30px;
+  }
+  .not_found_logo a div .top_text .icon {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .not_found_logo a div .bottom_text {
+    display: block;
+    font-size: 15px;
+    margin-top: -3px;
+  }
+  .not_found_main {
+    height: 90vh;
+  }
+  .not_found_main .not_found_main_inner .bg_holder {
+    max-width: 300px;
+    height: 210px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text {
+    margin-top: 50px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text p {
+    max-width: 660px;
+    font-size: 23px;
+    line-height: 35px;
+  }
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .not_found_logo {
+    position: relative;
+    height: 170px;
+  }
+  .not_found_logo a img {
+    max-width: 80px;
+    height: 80px;
+  }
+  .not_found_logo a div {
+    margin-left: 15px;
+  }
+  .not_found_logo a div .top_text {
+    font-size: 40px;
+  }
+  .not_found_logo a div .top_text .icon {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .not_found_logo a div .bottom_text {
+    display: block;
+    font-size: 20px;
+    margin-top: -3px;
+  }
+  .not_found_main {
+    height: 71vh;
+  }
+  .not_found_main .not_found_main_inner .bg_holder {
+    max-width: 300px;
+    height: 210px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text {
+    margin-top: 50px;
+  }
+  .not_found_main .not_found_main_inner .not_found_main_inner_text p {
+    max-width: 660px;
+    font-size: 23px;
+    line-height: 35px;
+  }
 }/*# sourceMappingURL=404.module.css.map */
