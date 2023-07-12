@@ -9,4 +9,71 @@
 @font-face {
   font-family: "FG Regular";
   src: url("../../../fonts/FG_Regular.otf");
+}
+.desktop_nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.desktop_nav .desktop_nav_inner {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_inner_side {
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_L {
+  justify-content: flex-start;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_L .desktop_nav_inner_side_cnt .deactive {
+  opacity: 0.8;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_L .desktop_nav_inner_side_cnt .active {
+  opacity: 1;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_L .desktop_nav_inner_side_cnt .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_L .desktop_nav_inner_side_cnt .logo img {
+  max-width: 70px;
+  height: 70px;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_L .desktop_nav_inner_side_cnt .logo div {
+  display: grid;
+  margin-left: 15px;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_L .desktop_nav_inner_side_cnt .logo div .top_text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "FG Bold";
+  font-size: clamp(1.44rem, 2vw + 1.25rem, 2.15rem);
+  color: #222831;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_L .desktop_nav_inner_side_cnt .logo div .top_text span {
+  color: #17b978;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_L .desktop_nav_inner_side_cnt .logo div .top_text .icon {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_L .desktop_nav_inner_side_cnt .logo div .bottom_text {
+  font-family: "FG Regular";
+  display: block;
+  margin-top: -8px;
+  color: #222831;
+  opacity: 0.8;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_R {
+  justify-content: flex-end;
 }/*# sourceMappingURL=Nav.module.css.map */

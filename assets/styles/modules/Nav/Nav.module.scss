@@ -18,6 +18,88 @@
 }
 
 // Desktop
+.desktop_nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  .desktop_nav_inner {
+    max-width: 1500px;
+    @include quickCenter("relative");
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .desktop_nav_inner_box {
+      .desktop_nav_inner_row {
+        .desktop_nav_inner_side {
+          height: 150px;
+          display: flex;
+          align-items: center;
+        }
+
+        .desktop_nav_L {
+          justify-content: flex-start;
+
+          .desktop_nav_inner_side_cnt {
+            .deactive {
+              opacity: 0.8;
+            }
+
+            .active {
+              opacity: 1;
+            }
+
+            .logo {
+              @include displayElement(flex, flex-start, center);
+              text-decoration: none;
+
+              img {
+                max-width: 70px;
+                height: 70px;
+              }
+
+              div {
+                display: grid;
+                margin-left: 15px;
+
+                .top_text {
+                  @include displayElement(flex, flex-start, flex-start);
+
+                  font-family: "FG Bold";
+                  font-size: $Logo;
+                  color: $EbonyClay;
+
+                  span {
+                    color: $MoutainMeadow;
+                  }
+
+                  .icon {
+                    font-size: 12px;
+                    margin-top: 10px;
+                    margin-left: 5px;
+                  }
+                }
+
+                .bottom_text {
+                  font-family: "FG Regular";
+                  display: block;
+                  margin-top: -8px;
+                  color: $EbonyClay;
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+        }
+
+        .desktop_nav_R {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
 
 // Responsive
 @media all and (max-width: 1995px) {
